@@ -6,7 +6,7 @@ import Card from "../components/Card/Card";
 import CardsData from "../components/Card/CardData";
 
 function PortfolioPage() {
-  const [imageWidth, setImageWidth] = useState<number>(0);
+  const [, setImageWidth] = useState<number>(0);
 
   const handleImageSize = (width: number) => {
     setImageWidth(width);
