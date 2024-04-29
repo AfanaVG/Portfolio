@@ -46,7 +46,7 @@ class PortfolioUtils {
       ),
       footer: (
         <>
-          <ElementIcon icon={<FaReact />} element={"React"}></ElementIcon>
+          <ElementIcon icon={<FaReact />} element={"React.js"}></ElementIcon>
           <ElementIcon icon={<FaGithub />} element={"GitHub"}></ElementIcon>
           <ElementIcon
             icon={<SiTypescript />}
@@ -68,18 +68,19 @@ class PortfolioUtils {
       id: "youtube-downloader",
       title: "Youtube Downloader",
       body: (
+        <>
         <p>
           Pequeña aplicación Python para descargar videos de YouTube utilizando
-          la librería de{" "}
-          <a
+          la librería de Pytube y Tkinker.
+        </p>
+        <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://pytube.io/en/latest/"
+            href="https://github.com/AfanaVG/YohoTube/releases"
           >
-            Pytube
+            Link descarga
           </a>
-          .
-        </p>
+        </>
       ),
     },
   ];
