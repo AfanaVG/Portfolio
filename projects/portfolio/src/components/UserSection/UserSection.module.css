@@ -1,0 +1,14 @@
+.user-img {
+  --img-size: 70%;
+  --img-border: .3rem;
+
+  border-top-left-radius: var(--img-border);
+  max-width: var(--img-size);
+  max-height: var(--img-size);
+}
+
+@media (max-width: 576px) {
+  .user-img {
+  --img-size: 150%;
+  }
+}

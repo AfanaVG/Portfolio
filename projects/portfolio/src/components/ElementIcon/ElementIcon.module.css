@@ -1,0 +1,10 @@
+.style {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.element {
+    margin-left: 0.4rem;
+}

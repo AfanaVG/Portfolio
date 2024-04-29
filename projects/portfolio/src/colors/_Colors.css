@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #8c8c8c;
+  --secondary-color: #deb887;
+  --terciary-color: #666666;
+  --panel-color: #333333;
+
+  /* Blancos y Cremas */
+  --font-light: #ffffff;
+  --cream-soft: #f5f5dc;
+
+  /* Azules Suaves */
+  --sky-blue-light: #87ceeb;
+  --dusty-blue: #6a5acd;
+
+  /* Acentos Metálicos */
+  --silver: #c0c0c0;
+  --bronze: #cd7f32;
+
+  /* Tonos de Madera */
+  --wood-light: #deb887;
+  --wood-dark: #654321;
+
+  /* Verdes Apagados */
+  --olive-green: #808000;
+  --forest-green: #228b22;
+
+  --button-hover: #999999;
+  --button-hover-text: #000000;
+}
