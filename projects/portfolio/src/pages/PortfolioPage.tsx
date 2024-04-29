@@ -1,6 +1,5 @@
 import styles from "./PortfolioPage.module.css";
 import UserSection from "../components/UserSection/UserSection";
-import ContactSection from "../components/ContactSection/ContactSection";
 import { useEffect, useRef, useState } from "react";
 import Card from "../components/Card/Card";
 
@@ -59,7 +58,6 @@ function PortfolioPage() {
     <div className={styles.container}>
       <section className={styles["head-info"]}>
         <UserSection handleImageSize={handleImageSize}></UserSection>
-        <ContactSection width={imageWidth}></ContactSection>
       </section>
 
       <div

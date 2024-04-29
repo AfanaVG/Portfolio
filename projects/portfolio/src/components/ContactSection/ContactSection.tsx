@@ -6,14 +6,10 @@ import LikedinIcon from "../../Icons/LinkedinIcon/LikedinIcon";
 import CV from "../../assets/CV-Jose-Antonio-Sanchez-Mantero-Rodriguez-Peral.pdf";
 
 interface Props {
-  width: number;
   className?: string;
 }
 
-function ContactSection({ width, className = "" }: Props) {
-  const style = {
-    width: width ? `${width}px` : "auto",
-  };
+function ContactSection({ className = "" }: Props) {
 
   const iconStyle = {
     width: "25px",
@@ -22,7 +18,7 @@ function ContactSection({ width, className = "" }: Props) {
   };
 
   return (
-    <section style={style} className={`${styles.container} ${className}`}>
+    <section className={`${styles.container} ${className}`}>
       <a
         target="_blank"
         rel="noopener noreferrer"

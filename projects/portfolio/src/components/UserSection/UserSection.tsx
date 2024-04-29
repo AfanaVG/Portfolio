@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import styles from "./UserSection.module.css";
 import userImage from "../../assets/cv-image.jpeg";
+import ContactSection from "../ContactSection/ContactSection";
 
 interface Props {
   handleImageSize: (width: number) => void;
@@ -44,6 +45,7 @@ function UserSection({ handleImageSize }: Props) {
   }, []);
 
   return (
+    <div className={styles.container}>
     <img
       id="user-img"
       ref={imageRef}
@@ -51,6 +53,8 @@ function UserSection({ handleImageSize }: Props) {
       src={userImage}
       alt="Mi photo"
     />
+    <ContactSection></ContactSection>
+    </div>
   );
 }
 
