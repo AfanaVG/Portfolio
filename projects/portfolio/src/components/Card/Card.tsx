@@ -1,7 +1,5 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import styles from "./Card.module.css";
-
-
 
 interface Props {
   title: string;
@@ -17,14 +15,8 @@ const Card = ({ title, time, body, footer }: Props) => {
         <b>{title}</b>
         <label>{time}</label>
       </div>
-      <div className={styles["card-body"]}>
-        {
-          body
-        }
-      </div>
-      <div className={styles["card-footer"]}>
-        {footer}
-      </div>
+      <div className={styles["card-body"]}>{body}</div>
+      <div className={styles["card-footer"]}>{footer}</div>
     </div>
   );
 };

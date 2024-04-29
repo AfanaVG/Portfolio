@@ -5,10 +5,8 @@ interface props {
   style?: CSSProperties;
 }
 
-function GitHubIcon({ style }:props) {
-  return (
-    <img src={icon} alt="GitHub" style={style} />
-  )
+function GitHubIcon({ style }: props) {
+  return <img src={icon} alt="GitHub" style={style} />;
 }
 
 export default GitHubIcon;

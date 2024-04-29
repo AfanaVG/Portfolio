@@ -1,20 +1,18 @@
-import { ReactNode } from 'react'
-import styles from "./ElementIcon.module.css"
+import { ReactNode } from "react";
+import styles from "./ElementIcon.module.css";
 
 interface props {
-    icon: ReactNode;
-    element?: ReactNode;
-  }
+  icon: ReactNode;
+  element?: ReactNode;
+}
 
-function ElementIcon({icon, element}:props) {
+function ElementIcon({ icon, element }: props) {
   return (
     <div className={styles.style}>
       {icon}
-      <div className={styles.element}>
-        {element}
-      </div>
+      <div className={styles.element}>{element}</div>
     </div>
-  )
+  );
 }
 
-export default ElementIcon
+export default ElementIcon;

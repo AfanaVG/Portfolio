@@ -41,7 +41,7 @@ class PortfolioUtils {
       body: (
         <p>
           Migración de aplicación web para gestionar grandes flotas de vehículos
-          (control por gps, avisos de taller, etc...).
+          (control por GPS, avisos de taller...).
         </p>
       ),
       footer: (

@@ -6,8 +6,6 @@ import Card from "../components/Card/Card";
 
 import CardsData from "../components/Card/CardData";
 
-
-
 function PortfolioPage() {
   const [imageWidth, setImageWidth] = useState<number>(0);
 
@@ -71,16 +69,17 @@ function PortfolioPage() {
       >
         <h2 id="about-me"> Sobre mí</h2>
         {CardsData.aboutMe.map((item) => (
-          <Card
-            key={item.id}
-            title={item.title}
-            body={item.body}
-          />
+          <Card key={item.id} title={item.title} body={item.body} />
         ))}
 
         <h2 id="experience">Experiencia</h2>
         {CardsData.experience.map((item) => (
-          <Card key={item.id} title={item.title} body={item.body} footer={item.footer} />
+          <Card
+            key={item.id}
+            title={item.title}
+            body={item.body}
+            footer={item.footer}
+          />
         ))}
 
         <h2 id="projects">Proyectos</h2>

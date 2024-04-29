@@ -5,10 +5,8 @@ interface props {
   style?: CSSProperties;
 }
 
-function LikedinIcon({ style }:props) {
-  return (
-    <img src={icon} alt="Likedin" style={style} />
-  )
+function LikedinIcon({ style }: props) {
+  return <img src={icon} alt="Likedin" style={style} />;
 }
 
 export default LikedinIcon;

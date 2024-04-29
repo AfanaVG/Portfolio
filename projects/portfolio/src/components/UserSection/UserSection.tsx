@@ -1,14 +1,12 @@
 import { useEffect, useRef } from "react";
-import ElementLabel from "../ElementLabel/ElementLabel";
 import styles from "./UserSection.module.css";
-import userImage from '../../assets/cv-image.jpeg'; 
+import userImage from "../../assets/cv-image.jpeg";
 
 interface Props {
   handleImageSize: (width: number) => void;
 }
 
 function UserSection({ handleImageSize }: Props) {
-  // Especifica que la referencia es a un elemento de imagen HTML
   const imageRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
@@ -30,15 +28,15 @@ function UserSection({ handleImageSize }: Props) {
     };
   }, [handleImageSize]);
 
-  const updateSize = () => {
-    if (imageRef.current) {
-      handleImageSize(imageRef.current.offsetWidth);
-    }
-  };
-
   useEffect(() => {
+    const updateSize = () => {
+      if (imageRef.current) {
+        handleImageSize(imageRef.current.offsetWidth);
+      }
+    };
+
     window.addEventListener("resize", updateSize);
-    updateSize(); // Actualiza el tamaño inicialmente al montar el componente
+    updateSize();
 
     return () => {
       window.removeEventListener("resize", updateSize);
@@ -51,7 +49,7 @@ function UserSection({ handleImageSize }: Props) {
       ref={imageRef}
       className={styles["user-img"]}
       src={userImage}
-      alt="Girl in a jacket"
+      alt="Mi photo"
     />
   );
 }

@@ -5,10 +5,8 @@ interface props {
   style?: CSSProperties;
 }
 
-function CVIcon({ style }:props) {
-    return (
-        <img src={icon} alt="CV" style={style} />
-      )
+function CVIcon({ style }: props) {
+  return <img src={icon} alt="CV" style={style} />;
 }
 
-export default CVIcon
+export default CVIcon;

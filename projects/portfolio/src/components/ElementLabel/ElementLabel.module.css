@@ -1,14 +1,13 @@
 .style {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .label {
-    font-weight: bold;
-    color: var(--primary-color);
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .element {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
-
