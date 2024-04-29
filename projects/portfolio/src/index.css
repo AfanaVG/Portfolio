@@ -74,9 +74,9 @@ button:active {
 
 html,
 body {
-  height: 90%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 h2 {
