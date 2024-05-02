@@ -76,7 +76,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+
 }
 
 h2 {
@@ -85,10 +85,6 @@ h2 {
 
 label {
   color: wheat;
-}
-
-hr {
-  background-color: wheat;
 }
 
 @media (max-width: 576px) {

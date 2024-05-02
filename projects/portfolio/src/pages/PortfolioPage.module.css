@@ -100,8 +100,12 @@
   .scroll-container h2 {
     align-self: center;
   }
+  
+  .container {
+    height: 90vh;
+  }
 
   .scroll-container {
-    height: 80vh;
+    height: 70vh;
   }
 }
